@@ -1,7 +1,7 @@
 ARG version
-FROM almalinux:${version}
-ARG sudheer
-ARG vineela
+FROM almalinux:${version:-6}
+ARG sudheer=topper
+ARG vineela=duller
 RUN echo "sudheer is ${sudheer} and vineela is ${vineela} "
 CMD [ "sleep", "100" ]
 
