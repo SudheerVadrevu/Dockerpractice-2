@@ -1,2 +1,3 @@
 FROM almalinux:9
-CMD [ "sleep", "100" ]
+CMD [ "ping", "-c5", "100" ]
+#ENTRYPOINT [ "" ]
