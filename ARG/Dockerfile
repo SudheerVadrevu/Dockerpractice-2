@@ -2,7 +2,7 @@ ARG version
 FROM almalinux:${version}
 ARG sudheer
 ARG vineela
-RUN echo "sudheer is ${sudheer} and vineela is {vineela}"
+RUN echo "sudheer is ${sudheer} and vineela is ${vineela} "
 CMD [ "sleep", "100" ]
 
 
