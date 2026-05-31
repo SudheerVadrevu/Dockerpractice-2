@@ -2,7 +2,7 @@ ARG version
 FROM almalinux:${version:-9.5}
 ARG sudheer=topper
 ARG vineela=duller
-ARG cat
+ARG cat=dog
 ENV cat=${cat}
 RUN echo "sudheer is ${sudheer} and vineela is ${vineela} and cat is ${cat} "
 CMD [ "sleep", "100" ]
